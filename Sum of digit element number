@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int fact(int n);
+int main(){
+	int n;
+	
+	cout << "Enter the Number : ";
+	cin>> n;
+	
+	int sum=fact(n);
+	cout<< "The sum of digits of the Number is "<<sum;
+	
+}
+int fact(int n){
+	
+	
+	if(n==0){
+		return 0;
+	}
+	else{
+	
+	return n+fact(n-1);
+}
+	
+	
+}
+
+
