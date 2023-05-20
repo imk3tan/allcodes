@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int rem=0,b,i,len,num;
+	cout << "Enter The Binary Number = " ;
+	cin >> num;
+	i=0;
+	while(num>0)
+	{	
+		rem=num%10;
+		b = b + (rem*pow(2,i));	
+		num=num/10;
+		i++;
+	}
+	cout << "Decimal Number = " << b;
+	return 0;
+}
